@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class OBWelcome extends StatelessWidget {
-  const OBWelcome({super.key});
+  final PageController controller;
+  
+  const OBWelcome({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
+          height: double.maxFinite,
           decoration: BoxDecoration(
             color: Colors.amber,
             image: DecorationImage(
@@ -40,6 +43,20 @@ class OBWelcome extends StatelessWidget {
             ),
           ),
         ),
+          Align(
+            alignment: Alignment.bottomRight,
+            child: TextButton(
+              onPressed: () {}, 
+              child: const Text(
+                'Próximo', 
+                style: TextStyle(
+                  color: Colors.white, 
+                  fontSize: 30, 
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+                    ),
+          ),
       ],
     );
   }

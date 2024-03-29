@@ -7,15 +7,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final PageController controller = PageController();
+    final PageController pageViewController = PageController();
     return Material(
       child: PageView(
         // scrollDirection: Axis.vertical,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
 
-        // controller: controller,
-        children: const <Widget>[
-          OBWelcome(),  
+        controller: pageViewController,
+        children: <Widget>[
+          OBWelcome(controller: pageViewController),  
           Center(
             child: Text('Second Page'),
           ),
