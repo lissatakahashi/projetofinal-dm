@@ -13,7 +13,7 @@ class OBWelcome extends StatelessWidget {
     return const OBBackground(
       imageProvider: NetworkImage(
         'https://images.pexels.com/photos/3765550/pexels-photo-3765550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), 
-      topText: 'Seja bem-vindo(a) ao Fashion Fusion!',
+      topText: 'Fashion Fusion',
     );
   }
 }
