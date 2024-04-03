@@ -36,7 +36,7 @@ class OBNavigationButtons extends StatelessWidget {
                         onPressed: () => pageController.animateToPage(
                           (selectedPage+1), 
                           duration: const Duration(seconds: 1), 
-                          curve: Curves.bounceInOut,
+                          curve: Curves.decelerate,
                         ), 
                         child: const Text(
                           'Próximo', 

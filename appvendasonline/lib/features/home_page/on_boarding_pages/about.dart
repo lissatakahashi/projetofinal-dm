@@ -12,7 +12,7 @@ class OBAbout extends StatelessWidget {
   Widget build(BuildContext context) {
 return const OBBackground(
       imageProvider: AssetImage('assets/images/about.jpeg'), 
-      topText: 'Seja bem-vindo(a) ao Fashion Fusion!',
+      topText: 'Está em busca de conforto, praticidade e elegância? Venha descobrir o que a Fashion Fusion tem a oferecer no mundo da moda feminina.',
     );
   }
 }
